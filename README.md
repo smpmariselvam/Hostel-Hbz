@@ -142,7 +142,7 @@ npm install
 npm run start
 ```
 
-✅ Server runs on: `http://localhost:5000`
+✅ Server runs on: `https://hostel-hbz.onrender.com`
 
 ---
 

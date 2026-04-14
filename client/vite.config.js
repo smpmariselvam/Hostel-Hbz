@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
   // Set the third parameter to '' to load all env regardless of the `VITE_` prefix.
   const env = loadEnv(mode, process.cwd(), '')
   
-  const apiUrl = env.VITE_API_URL || 'http://localhost:5000'
+  const apiUrl = env.VITE_API_URL || 'https://hostel-hbz.onrender.com'
   
   return {
     plugins: [react()],

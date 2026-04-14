@@ -22,8 +22,8 @@ const app = express();
 const server = createServer(app);
 
 // Get CORS origins from environment variables
-const CORS_ORIGIN = process.env.CORS_ORIGIN || "http://localhost:3000";
-const SOCKET_CORS_ORIGIN = process.env.SOCKET_CORS_ORIGIN || "http://localhost:3000";
+const CORS_ORIGIN = process.env.CORS_ORIGIN || "https://hostel-hbz.onrender.com";
+const SOCKET_CORS_ORIGIN = process.env.SOCKET_CORS_ORIGIN || "https://hostel-hbz.onrender.com";
 
 console.log('🔒 CORS Origin:', CORS_ORIGIN);
 console.log('🔒 Socket CORS Origin:', SOCKET_CORS_ORIGIN);
@@ -198,7 +198,7 @@ app.use('*', (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || "https://hostel-hbz.onrender.com";
 server.listen(PORT, () => {
   console.log(`\n🚀 Server running on port ${PORT}`);
   console.log(`📊 Environment: ${process.env.NODE_ENV}`);

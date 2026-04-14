@@ -117,7 +117,7 @@ const AdminDashboard = () => {
   });
 
   // Get API URL from environment variables
-  const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+  const API_URL = import.meta.env.VITE_API_URL || 'https://hostel-hbz.onrender.com';
 
   useEffect(() => {
     fetchDashboardData();

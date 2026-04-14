@@ -19,7 +19,7 @@ export const SocketProvider = ({ children }) => {
   const { user, isAuthenticated } = useAuth();
 
   // Get socket URL from environment variables
-  const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'http://localhost:5000';
+  const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || 'https://hostel-hbz.onrender.com';
 
   useEffect(() => {
     if (isAuthenticated() && user) {
